@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en, fr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Christian STARON - Homepage</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i">
+  <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="vendor/academicons/css/academicons.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
+  <link href="css/extras.css" rel="stylesheet">
+
+  <!-- scripts on load -->
+  <script src="vendor/d3/d3.min.js"></script>
+  <script src="js/reviewing.js" charset="utf-8"></script>
+  <script src="js/hal.js" charset="utf-8"></script>
+
+</head>
+
+<body id="page-top" onload="reviewingVis('reviewing.json'); getPublicationsAuthor('christian-staron');">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <select class="selectpicker" data-width="fit">
+      <option data-content='<span class="flag-icon flag-icon-us"></span>'>English</option>
+      <option data-content='<span class="flag-icon flag-icon-fr"></span>'>Français</option>
+    </select>
+    <a class="nav-link text-muted subheading" href="https://www.umr-lastig.fr/">LASTIG</a>
+    <a class="nav-link text-muted subheading" href="https://www.umr-lastig.fr/acte">ACTE</a>
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Christian STARON</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/ChristianStaron.jpeg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#about">Présentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#interest">Research Interests</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#interest">Sujets de recherche</a>
+        </li>
+        <!--
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#news">News</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#news">Actualités</a>
+        </li>
+        -->
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#experience">Experience</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#experience">Expérience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#education">Education</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#education">Formation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#publications">Publications</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#presentations">Invited talks</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#presentations">Présentations effectuées</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#projects">Projects</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#projects">Projets</a>
+        </li>
+        <!--
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#other">Other research activities</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#other">Autres activités de recherche</a>
+        </li>
+        -->
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0 lang-en">Christian
+          <span class="text-primary">Staron</span>
+          <br />
+          Research engineer
+        </h1>
+        <h1 class="mb-0 lang-fr">Christian
+          <span class="text-primary">Staron</span>
+          <br />
+          Ingénieur de recherche
+        </h1>
+        <div class="subheading mb-5">73 avenue de Paris · 94165 Saint-Mandé CEDEX · (+33)1 43 98 62 37 ·
+          <a><!--anti@spam.fr!-->christian.staron@ign.fr</a>
+        </div>
+        <p class="lead mb-5 lang-en">Member of UMR <a href="https://www.umr-lastig.fr/">Lastig</a></p>
+        <p class="lead mb-5 lang-en">Member of the <a href="https://www.umr-lastig.fr/acte">ACTE</a> research team</p>
+        <p class="lead mb-5 lang-fr">Membre de l'UMR <a href="https://www.umr-lastig.fr/">Lastig</a></p>
+        <p class="lead mb-5 lang-fr">Membre de l'équipe <a href="https://www.umr-lastig.fr/acte">ACTE</a></p>
+        <div class="social-icons">
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <!--
+          <a href="https://www.researchgate.net/profile/your_researchgate_id">
+            <i class="ai ai-researchgate"></i>
+          </a>
+          -->
+          <a href="https://github.com/StaronC">
+            <i class="fab fa-github"></i>
+          </a>
+          <!--
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          -->
+          <!--
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          -->
+          <!--
+          <a href="https://scholar.google.fr/citations?user=your_user_id">
+            <i class="ai ai-google-scholar"></i>
+          </a>
+          <a href="#">
+            <i class="ai ai-publons"></i>
+          </a>
+          -->
+          <a href="#">
+            <i class="ai ai-orcid"></i>
+          </a>
+          <!--
+          <a href="#">
+            <i class="ai"><img src="img/icons/hal-b2.svg" width=45px/></i>
+          </a>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="interest">
+      <div class="w-100">
+        <h2 class="mb-5 lang-en">Research Interests</h2>
+        <h2 class="mb-5 lang-fr">Sujets de recherche</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <article class="col-md-6 col-lg-4">
+								<div class="portfolio-item d-block mx-auto">
+									<img class="img-fluid" src="img/pleiades-image-marseille.jpeg" alt="" />
+									<div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
+										<div class="folio-info my-auto w-100 text-center">
+											<h5 class="lang-en">Satellite imagery</h5>
+                                            <h5 class="lang-fr">Imagerie satellitaire</h5>
+										</div>
+									</div>
+								</div>
+          </article>
+          <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/faille_sismique.jpg" alt="" />
+                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
+                    <div class="folio-info w-100 text-center">
+                      <h5 class="lang-en">Earth displacement due to seismic faults</h5>
+                      <h5 class="lang-fr">Déplacement des sols à cause de failles sismiques</h5>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <article class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/illustration_object_detection.png" alt="" />
+                  <div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
+                    <div class="folio-info my-auto w-100 text-center">
+                      <h5 class="lang-en">Object detection by deep learning</h5>
+                      <h5 class="lang-fr">Détection d'objets par apprentissage profond</h5>
+                    </div>
+                  </div>
+                </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+<!--
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="news">
+      <div class="w-100">
+        <h2 class="mb-5">News</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/orthez_google.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First news</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/orthez_IGN.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second news</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/orthez_OSM.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third news</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+-->
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5 lang-en">Experience</h2>
+        <h2 class="mb-5 lang-fr">Expérience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0 lang-en">Research engineer</h3>
+            <h3 class="mb-0 lang-fr">Ingénieur de recherche</h3>
+            <div class="subheading mb-3">ACTE, IGN France</div>
+
+              <p class="lead mb-5 lang-fr"> Je travaille à l'IGN dans le cadre d'un CDD d'un an. Le CDD est une collaboration entre le LaSTIG et
+              l'équipe  Tectonique et mécanique de la lithosphère de l'IPGP (Institut de Physique du Globe de Paris). 
+              L'IGN développe un MicMac, un suite de logiciel de photogrammétrie en accès libre. MicMac a
+              actuellement développé une chaine de traitement permettant de calculer le déplacement 2D de pixels sur des
+              images satellitaires au sein d'une fenêtre pré-définie. La méthode développée repose sur l'hypothèse que
+              tous les pixels se déplacent de manière uniforme au sein d'une même fenêtre. Ceci est généralement vrai
+              sauf lorsque l'image comporte une discontinuité. Le CDD vise à développer des méthodes capables de
+              calculer le déplacement 2D de pixels même lorsqu'une discontinuité est présente dans l'image. Le travail
+              s'appliquera particulièrement aux discontinuités dans le sol de la Terre liées aux failles sismiques, l'un
+              des thème de recherche phares de l'IPGP. Le CDD est financé par le CNES grâce à un appel à projet TOSCA
+              (Terre Océans Surface Continentale et Atmosphère). </p>
+            <p class ="lead mb-5 lang-en"> I'm working at IGN on a one-year fixed-term contract. The contract is a collaboration between the LaSTIG and
+              the Tectonics and Mechanics of the Lithosphere team at IPGP (Institut de Physique du Globe de Paris).
+              IGN is developing MicMac, an open-access photogrammetry software suite. MicMac has
+              currently developed a processing pipeline for calculating the 2D displacement of pixels on
+              satellite images within a pre-defined window. The method developed is based on the assumption that
+              all pixels move uniformly within the same window in the same direction. This is generally true
+              except when the image contains a discontinuity. The fixed-term contract aims to develop methods capable of
+              calculating the 2D displacement of pixels even when a discontinuity is present in the image. The work will
+              be applied in particular to discontinuities in the Earth's ground linked to seismic faults, one of the
+              IPGP's flagship research themes. The contract is financed by CNES through a call for projects TOSCA
+              (Earth Oceans Continental Surface and Atmosphere). </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary lang-fr">Novembre 2023 - Présent</span>
+              <span class="text-primary lang-en"> November 2023 - Today </span>
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="timeline" class="section appear clearfix">
+      <div class="container mar-bot50">
+        <div class="row mar-bot40">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading lang-en">Experience</h2>
+              <h2 class="section-heading lang-fr">Expérience</h2>
+              <h3 class="section-subheading text-muted mb-5 lang-en"> Past jobs and roles</h3>
+              <h3 class="section-subheading text-muted mb-5 lang-fr"> Postes antérieurs</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>22-11-2021</h4>
+                    <h4 class="subheading lang-en">Research engineer at <a href="https://irfm.cea.fr/">CEA/IRFM </a></h4>
+                    <h4 class="subheading lang-fr">Ingénieur chercheur au <a href="https://irfm.cea.fr/">CEA/IRFM </a></h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted lead mb-5 lang-en"> Exploration of semi-supervised learning methods for tokamak WEST's automatised first wall protection.</p>
+                    <p class="text-muted lead mb-5 lang-fr"> Exploration de méthodes d'apprentissage semi-supervisé pour la protection automatisée du bouclier thermique du tokamak WEST </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>15-03-2021</h4>
+                    <h4 class="subheading lang-en">Research engineer intern at <a href="https://irfm.cea.fr/">CEA/IRFM</a></h4>
+                    <h4 class="subheading lang-fr">Ingénieur chercheur stagiaire au <a href="https://irfm.cea.fr/">CEA/IRFM</a></h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted lead mb-5 lang-en"> Stabilisation of WEST's infrared videos and development of a hotspot annotation tool.</p>
+                    <p class="text-muted lead mb-5 lang-fr"> Stabilisation des films infrarouges de WEST et développement d'un outil d'aide à l'annotation de points chauds.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>01-06-2020</h4>
+                    <h4 class="subheading lang-en">Research engineer intern at <a href="https://www.i2m.univ-amu.fr/">I2M - UMR 7373</a></h4>
+                    <h4 class="subheading lang-fr">Ingénieur de recherche stagiaire à <a href="https://www.i2m.univ-amu.fr/">l'I2M - UMR 7373</a></h4>
+                  </div>
+                  <div class="timeline-body ">
+                    <p class="text-muted lead mb-5 lang-en"> Detection of peaks in images obtained by nuclear magnetic resonance.</p>
+                    <p class="text-muted lead mb-5 lang-fr"> Détection de pics dans des images obtenues par résonance magnétique nucléaire.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5 lang-en">Education</h2>
+        <h2 class="mb-5 lang-fr">Formation</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><a href="https://www.centrale-mediterranee.fr/fr"> École Centrale Marseille</a></h3>
+            <div class="subheading mb-3">Master 2</div>
+            <div> <p class="lead mb-5 lang-fr"><a href="https://formations.univ-amu.fr/fr/master/5STS">Traitement du Signal et des Images </a> - Spécialité Interactions Physique Signaux Images </p>
+              <p class="lead mb-5 lang-fr"><a href="https://sciences.univ-amu.fr/">Faculté des Sciences</a> - Site Marseille : Château-Gombert</p></div>
+              <div> <p class="lead mb-5 lang-en"><a href="https://formations.univ-amu.fr/fr/master/5STS">Signal and Image processing </a> - Physical signal and images interactions specialisation </p>
+                <p class="lead mb-5 lang-en"><a href="https://sciences.univ-amu.fr/"> Science Faculty </a> - Marseille : Château-Gombert campus</p></div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary lang-fr"> Septembre 2020 - Septembre 2021 </span>
+            <span class="text-primary lang-en"> September 2020 - September 2021</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0"> <a href="www.univ-amu.fr"> Aix-Marseille Université</a></h3>
+            <div class="subheading mb-3">Master 1</div>
+            <div> <p class="lead mb-5 lang-fr"><a href="https://formations.univ-amu.fr/fr/master/5STS"> Traitement du Signal et des Images </a> - Spécialité Interactions Physique Signaux Images</p>
+            <p class="lead mb-5 lang-fr"><a href="https://sciences.univ-amu.fr/">Faculté des Sciences</a> - Site Marseille : St-Jérôme</p></div>
+
+            <div> <p class="lead mb-5 lang-en"><a href="https://formations.univ-amu.fr/fr/master/5STS"> Signal and Image processing </a> - Physical signal and images interactions specialisation </p>
+            <p class="lead mb-5 lang-en"><a href="https://sciences.univ-amu.fr/">Science Faculty</a> - Marseille : St-Jérôme campus</p></div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary lang-fr"> Septembre 2019 - Juin 2020 </span>
+            <span class="text-primary lang-en"> September 2019 - June 2020</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><a href="www.univ-amu.fr">Aix-Marseille Université</a></h3>
+            <div class="subheading mb-3 lang-fr"> Licence 3 </div>
+            <div class="subheading mb-3 lang-en"> Bachelor degree - Year 3</div>
+            <div><p class="lead mb-5 lang-en"> <a href="https://formations.univ-amu.fr/fr/licence/3SMI/PRSMI3AA"> Mathematics </a></p>
+                 <p class="lead mb-5 lang-fr"> <a href="https://formations.univ-amu.fr/fr/licence/3SMI/PRSMI3AA"> Mathématiques </a></p></div>
+            <div> <p class="lead mb-5 lang-fr"><a href="https://sciences.univ-amu.fr/">Faculté des Sciences</a> - Site Marseille : St-Charles </p>
+            <p class="lead mb-5 lang-en"><a href="https://sciences.univ-amu.fr/">Science Faculty</a> - Marseille : St-Charles Campus </p></div>
+            </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary lang-fr"> Septembre 2018 - Juin 2019 </span>
+            <span class="text-primary lang-en"> September 2018 - June 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0"><a href="www.univ-amu.fr"> Aix-Marseille Université</a></h3>
+            <div class="subheading mb-3 lang-fr"> Licence </div>
+            <div class="subheading mb-3 lang-en"> Bachelor degree </div>
+            <div><p class="lead mb-5 lang-en"> <a href="https://formations.univ-amu.fr/fr/licence/3BMH/PRBMH3AB"> Applied Mathematics and Computer Sciences to Human and Social Sciences </a></p>
+                 <p class="lead mb-5 lang-fr"> <a href="https://formations.univ-amu.fr/fr/licence/3BMH/PRBMH3AB"> Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales</a></p></div>
+            <div> <p class="lead mb-5 lang-fr"><a href="https://feg.univ-amu.fr/">Faculté d'Économie Gestion</a> - Site Aix-en-Provence : Ferry </p>
+            <p class="lead mb-5 lang-en"><a href="https://feg.univ-amu.fr/">Economics and Management Faculty</a> - Aix-en-Provence : Ferry Campus</p></div>
+            </div>
+
+          <div class="resume-date text-md-right lang-fr">
+            <span class="text-primary"> Septembre 2015 - Juin 2018 </span> </div>
+             <div class="resume-date text-md-right lang-en"> <span class="text-primary"> September 2015 - June 2018</span>
+          </div>
+            </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
+      <div class="w-100">
+        <h2 class="mb-5">Publications</h2>
+
+        <span id="pubACL"><div class="subheading mb-3 mt-3">[ACL] Journals</div></span>
+        <span id="pubACLN"><div class="subheading mb-3 mt-3">[ACLN] Journals</div></span>
+        <span id="pubASCL"><div class="subheading mb-3 mt-3">[ASCL] Others</div></span>
+        <span id="pubACTI"><div class="subheading mb-3 mt-3">[ACTI] Conferences</div></span>
+        <span id="pubACTN"><div class="subheading mb-3 mt-3">[ACTN] Conferences</div></span>
+        <span id="pubCOM"><div class="subheading mb-3 mt-3">[COM] Conferences</div></span>
+        <span id="pubOS"><div class="subheading mb-3 mt-3">[OS] Books and Chapters</div></span>
+        <span id="pubDO"><div class="subheading mb-3 mt-3">[DO] Books and Chapters</div></span>
+        <span id="pubAFF"><div class="subheading mb-3 mt-3">[AFF] Posters</div></span>
+        <span id="pubAP"><div class="subheading mb-3 mt-3">[AP] Preprints</div></span>
+        <span id="pubTH"><div class="subheading mb-3 mt-3">[TH] Dissertations</div></span>
+        <span id="pubINV"><div class="subheading mb-3 mt-3">[INV] Invited Talks</div></span>
+        <span id="pubPV"><div class="subheading mb-3 mt-3">[PV] Popularization</div></span>
+
+        <!-- provide a subset of the publications based on a keyword -->
+        <!--
+        <span id="pubGeneralisation"><div class="subheading mb-3 mt-3">Généralisation</div></span>
+	<script> getKeywordPublicationsAuthorStartYear('guillaume-touya', 'Généralisation', 2006, "pubGeneralisation"); </script>
+        <span id="pubsemisupervisewest"><div class="subheading mb-3 mt-3">Detection of Thermal Events by Semi-Supervised Learning for Tokamak First Wall Safety</div></span>
+	    <script> getKeywordPublicationsAuthorStartYear('christian-staron', 'Detection of Thermal Events by Semi-Supervised Learning for Tokamak First Wall Safety', 2023, "pubsemisupervisewest"); </script>
+	    -->
+      </div>
+    </section>
+
+    <section class="section appear clearfix p-3 p-lg-5" id="presentations">
+      <div class="w-100">
+        <h2 class="mb-5 mt-5 lang-en">Invited Talks</h2>
+        <h2 class="mb-5 mt-5 lang-fr">Présentations effectuées</h2>
+        <ol id="talks" class="sub">
+        </ol>
+        <ul>
+        <li><p class="lead mb-5 lang-en">  Presentation at <a href="https://www.cea.fr/">CEA's</a> PTC (Transversal skills program) seminar (November 2022 - GRENOBLE, FRANCE) </p>
+          <p class="lead mb-5 lang-fr"> Présentation au séminaire de Programme Transverse des Compétences du <a href="https://www.cea.fr/"> CEA</a>
+            (Novembre 2022 - GRENOBLE, FRANCE) </p> </li>
+        <li><p class="lead mb-5 lang-en">  Presentation at <a href="https://list.cea.fr/en/">CEA-LIST's </a> Semi-supervised learning seminar (November 2022 - SACLAY, FRANCE) </p>
+          <p class="lead mb-5 lang-fr"> Présentation au séminaire d'apprentissage semi-supervisé du <a href="https://list.cea.fr/fr/"> CEA-LIST </a>
+            (Novembre 2022 - SACLAY, FRANCE) </p></li>
+          </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+      <div class="container">
+        <div class="row text-center title">
+          <h2 class="lang-en">Projects</h2>
+          <h2 class="lang-fr">Projets</h2>
+        </div>
+        <div class="subheading mb-3 lang-en">On-going and past research projects</div>
+        <div class="subheading mb-3 lang-fr">Projets de recherche passés et en cours</div>
+        <div class="row projects">
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/Logo_Micmac.png" alt="" class="icon">
+              </div>
+              <h4 class="heading lang-en">MicMac development</h4>
+              <h4 class="heading lang-fr">Développement de MicMac</h4>
+              <p class="description lang-en">MicMac is a free open source photogrammetry software suite.</p>
+              <p class="description lang-fr">MicMac est une suite de logiciels libre de photogrammétrie.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/tokamak-west.jpg" alt="" class="icon">
+              </div>
+              <h4 class="heading lang-en">Automatised protection of tokamak WEST</h4>
+              <h4 class="heading lang-fr">Protection automatisée du tokamak WEST</h4>
+              <p class="description lang-en">Participation to development of an automatic processing pipeline for hot spot detection on tokamak WEST's thermal shield.</p>
+              <p class="description lang-fr">Participation au développement d'un d'un chaîne de traitement automatisée pour le traitement des points chauds présents sur le bouclier thermique du tokamak WEST.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cut cut-bottom"></div>
+    </section>
+
+    <hr class="m-0">
+<!--
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="other">
+      <div class="w-100">
+        <h2 class="mb-5">Other research activities</h2>
+
+        <div class="subheading mb-3">Software development</div>
+
+        <div class="row projects">
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/cartagen_logo.png" alt="" class="icon">
+              </div>
+              <h4 class="heading">LoremIpsum</h4>
+              <a class="description" href="https://umr-lastig.fr">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/Geoxygene-logo.png" alt="" class="icon">
+              </div>
+              <h4 class="heading">LoremIpsum2</h4>
+              <a class="description" href="https://umr-lastig.fr">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/logo_deepmapgen_small.png" alt="" class="icon">
+              </div>
+              <h4 class="heading">LoremIpsum3</h4>
+              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+            </div>
+          </div>
+        </div> -->
+        <!--
+        <div class="subheading mb-3 mt-3">Teaching</div>
+        <div class="subheading mb-3 mt-3">Other research activities</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            <a href="https://umr-lastig.fr/">Lorem ipsum dolor sit amet</a> since Jul. 2017</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            <a href="https://umr-lastig.fr">Lorem ipsum dolor sit amet</a> since Jan. 2017</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            Lorem ipsum dolor sit amet</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            Lorem ipsum dolor sit amet</li>
+        </ul>
+        -->
+        <!--
+        <div class="subheading mb-3 mt-3">Supervisions</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check-square"></i>
+              *Insert PhD Student name here* (PhD, 2016), co-supervised with *insert name here* (LASTIG)
+            </li>
+          <li>
+            <i class="fa-li fa fa-check-square"></i>
+            *Insert PhD Student name here* (PhD, 2018), co-supervised with *insert name here* (LASTIG)
+            </li>
+        </ul>
+        -->
+        <!--
+        <div class="subheading mb-3 mt-3">Reviewing</div>
+        <div id="reviewings" class="sub">
+            <div id="revj">
+            </div>
+            <div id="revc">
+            </div>
+            <div id="revb">
+            </div>
+        </div>
+        -->
+        <!--
+        <div class="subheading mb-3">Awards</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+          </li>
+        </ul>
+
+      </div>
+    </section> -->
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery.isotope.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.js"></script>
+
+</body>
+
+</html>
